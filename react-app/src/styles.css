@@ -1,0 +1,38 @@
+.movie__poster {
+  object-fit: cover;
+}
+
+.movie-info-modal .modal-dialog {
+  transition: opacity 0.5s ease,
+    transform 0.5s ease !important;
+  opacity: 0;
+  /* transform: translateY(1000px) !important; */
+  transform: scale(0) !important;
+  /* transform: rotateY(360deg) !important; */
+}
+
+.movie-info-modal.show .modal-dialog {
+  opacity: 1;
+  /* transform: translateY(0) !important; */
+  transform: scale(1) !important;
+  /* transform: rotateY(0deg) !important; */
+}
+
+/* .movie-info-modal.show .modal-dialog {
+  animation-name: model-slide-up-growing;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+} */
+
+/* @keyframes modal-slide-up-growing {
+  from {
+    opacity: 0;
+    transform: translate(0, 3000px) !important;
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0, 0) !important;
+  }
+} */
